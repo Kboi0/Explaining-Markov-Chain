@@ -39,7 +39,7 @@ Now that the probabilities are known, the program can start to generate text. Th
   
 Then, using the probabilities of which words come after that word, it chooses the next word. This repeats until as long as desired.
 ### Implementation  
-Utilizing arrays, vactors, maps, and hashing, the code sample provided consists of many parts. The sample is based on Github User: Atrix256's implementation.
+Utilizing arrays, vactors, maps, and hashing, the code sample provided consists of many parts.
 #### Learning Stage
 Here we count the words in our data and their frequency, afterward turning them into cumulative probablilities.
 #### Data Generation Stage
