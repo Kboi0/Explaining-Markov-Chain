@@ -1,2 +1,60 @@
-# Explaining-Markov-Chain
-A tutorial exploring the Markov Chain and its application as a Text Generator. 
+# Explaining-the-Markov-Chain
+## Tutorial Overview
+This tuorial will give you a basic understanding of the Markov Chain model and show you an example of it being used in a c++ text generator.
+## What is a Markov Chain?
+Named after the Russian Mathematician, Andrey Markov, a Markov Chain is a stochastic model that describes a sequence of possible events, but the probability of each event is dependent only on the state attained in the previous event. 
+# How Does it Work?
+## At the Base Level
+Given some number of states, each state has a percentage chance to change to 0 or more other states. Usually you get these starting percentages from actual data and then use them to generate data of similar types.
+## Regarding the Example
+### Methodology
+First the program will analyze the text we give it, keeping track of each word it finds, what comes after that word, and how many times that word came next.  
+  
+When analyzing the poem “The Road Not Taken” by Robert Frost, here are the words that come after “and” and their frequency:
+  
+Sorry 	-1  
+Be 	    -1   
+Looked 	-1   
+Having 	-1  
+Wanted  -1  
+Both 	  -1   
+Ages 	  -1   
+I 	    -1  
+That 	  -1    
+  
+    
+After all the counts are gathered up, they are then converted to probabilities by dividing the count of each word by the total sum of words found.   
+  
+Sorry 	11%  
+Be 	    11%  
+Looked  11%  
+Having 	11%  
+Wanted  11%  
+Both 	  11%   
+Ages 	  11%   
+I 	    11%  
+That 	  11%  
+  
+Now that the probabilities are known, the program can start to generate text. The first thing it does is pick a word purely at random, having it serve as the first word in the text.  
+  
+Then, using the probabilities of which words come after that word, it chooses the next word. This repeats until as long as desired.
+### Implementation
+# How is it Useful?
+I have only demonstrated a small bit of what Markov Chains are capable of. The nature of the model allows for many things to be considered when applying it to the real world. 
+  
+Other applications are as follows:  
+Make an ai that plays games such as Chutes and Ladders, or Tic Tac Toe  
+An ai that solves mazes  
+Extrapolate probabilities in Thermodynamics  
+Markov Chains make up a significant portion of the study of Quantum Mechanics  
+Hidden Markov Chains are used in Bioinformatics, like speech recognition  
+Economic studies.   
+# Further Reading
+https://rosettacode.org/wiki/Markov_chain_text_generator  
+https://brilliant.org/wiki/markov-chains/  
+https://en.wikipedia.org/wiki/Markov_chain  
+https://setosa.io/ev/markov-chains/  
+
+
+
+
