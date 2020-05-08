@@ -1,6 +1,7 @@
 # Explaining-the-Markov-Chain
 ## Tutorial Overview
-This tuorial will give you a basic understanding of the Markov Chain model and show you an example of it being used in a c++ text generator.
+This tuorial will give you a basic understanding of the Markov Chain model and link you to Atrix256's example (https://github.com/Atrix256/TextMarkovChain ) of it being used in a c++ text generator.
+  
 ## What is a Markov Chain?
 Named after the Russian Mathematician, Andrey Markov, a Markov Chain is a stochastic model that describes a sequence of possible events, but the probability of each event is dependent only on the state attained in the previous event. 
 # How Does it Work?
@@ -38,15 +39,7 @@ That 	  11%
 Now that the probabilities are known, the program can start to generate text. The first thing it does is pick a word purely at random, having it serve as the first word in the text.  
   
 Then, using the probabilities of which words come after that word, it chooses the next word. This repeats until as long as desired.
-### Implementation  
-Utilizing arrays, vactors, maps, and hashing, the code sample provided consists of many parts.
-#### Learning Stage
-Here we count the words in our data and their frequency, afterward turning them into cumulative probablilities.
-#### Data Generation Stage
-Selects a random starting state, then chooses the next state using weighted options. 
-#### File Output
-This is where the program reads the file into memory and performs the operation, generating both an output file and a statistics file. 
-
+  
 # How is it Useful?
 I have only demonstrated a small bit of what Markov Chains are capable of. The nature of the model allows for many things to be considered when applying it to the real world. 
   
@@ -70,7 +63,7 @@ https://en.wikipedia.org/wiki/Markov_chain
   A wonderful series of graphics that illustrate the Markov Chain model:  
 https://setosa.io/ev/markov-chains/  
   
-This code sample is what this tutorial is based on. I felt it offered a lot of information about the Markov Chain model and also included cool features such as statistics for whatever documemnt you want to use:  
+This code sample created by Atrix 256 offers a lot of information about the Markov Chain model and also included cool features such as statistics for whatever documemnt you want to use. It is alos the code I looked at while creating the tutorial. Check it out on their Github account:  
 https://github.com/Atrix256/TextMarkovChain 
 
 
